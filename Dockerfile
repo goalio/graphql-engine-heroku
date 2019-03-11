@@ -1,4 +1,4 @@
-FROM hasura/graphql-engine:v1.0.0-alpha39
+FROM hasura/graphql-engine:v1.0.0-alpha39.cli-migrations
 
 # Enable the console
 ENV HASURA_GRAPHQL_ENABLE_CONSOLE=true
@@ -18,6 +18,6 @@ CMD graphql-engine \
 #    serve \
 #    --server-port $PORT \
 #    --access-key XXXXX \
-#    --auth-hook https://myapp.com/hasura-webhook 
+#    --auth-hook https://myapp.com/hasura-webhook
 #
 # Console can be enable/disabled by the env var HASURA_GRAPHQL_ENABLE_CONSOLE
